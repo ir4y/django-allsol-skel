@@ -1,0 +1,18 @@
+syntax: glob
+.hgignore
+*~
+*.pyc
+*.pyo
+*.db
+local.py
+static/media/*
+static/filebrowser/*
+static/grappelli/*
+static/tiny_mce/*
+static/admin/*
+media/*
+.idea/*
+syntax: regexp
+.*\#.*\#$
+
+
