@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 from fabric.api import env, cd, run, prefix
 from fabric.operations import local
-from balans888.settings import LOCAL_APPS
+from {{ project_name }}.settings import LOCAL_APPS
 
 __author__ = 'jackdevil'
 
-env.hosts = ['{{ project_name }}@{{ project_name }}.ru']
+env.hosts = ['{{ project_name }}@{{ project_name }}.ru:22']
 prefix = prefix('source /home/{{ project_name }}/bin/activate')
 
 def deploy():
