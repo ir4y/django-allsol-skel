@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-
 from django.conf.urls.defaults import patterns, include, url
+from main.views import MainView
 
-urlpatterns = patterns('main.views',
-    url(r'^$', 'main_view', name='main'),
+
+urlpatterns = patterns('',
+    url(r'^$', MainView.as_view(), name='main'),
 )

@@ -37,7 +37,7 @@ USE_L10N = True
 
 STATIC_ROOT = join(PROJECT_PATH, 'static')
 STATIC_URL = '/static/'
-ADMIN_MEDIA_PREFIX = STATIC_URL + "grappelli/"
+ADMIN_MEDIA_PREFIX = STATIC_URL
 MEDIA_ROOT = join(PROJECT_PATH, 'media')
 MEDIA_URL = '/media/'
 STATICFILES_DIRS = ()

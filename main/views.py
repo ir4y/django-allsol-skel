@@ -1,5 +1,6 @@
-# Create your views here.
-from django.views.generic.simple import direct_to_template
+# -*- coding: utf-8 -*-
+from django.views.generic import TemplateView
 
-def main_view(request):
-    return direct_to_template(request,"base.html")
+
+class MainView(TemplateView):
+    template_name = 'base.html'
